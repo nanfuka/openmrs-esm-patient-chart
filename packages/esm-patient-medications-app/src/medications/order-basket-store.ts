@@ -6,9 +6,11 @@ function getPatientUuidFromUrl(): string {
   return match && match[1];
 }
 export interface OrderBasketStore {
-  pendingOrders: boolean;
   items: {
-    [patientUuid: string]: [];
+    [patientUuid: string]: {
+      orders: Array<OrderBasketItem>;
+      pendingOrders: boolean;
+    };
   };
 }
 
@@ -18,7 +20,6 @@ export interface OrderBasketStoreActions {
 }
 
 export const orderBasketStore = createGlobalStore<OrderBasketStore>('drug-order-basket', {
-  pendingOrders: false,
   items: {},
 });
 
@@ -28,15 +29,40 @@ export const orderBasketStoreActions = {
     return {
       items: {
         ...store.items,
-        [patientUuid]: typeof value === 'function' ? value() : value,
+        [patientUuid]: {
+          pendingOrders: store.items?.[patientUuid]?.pendingOrders,
+          orders: typeof value === 'function' ? value() : value,
+        },
       },
     };
   },
-  isPending(_: OrderBasketStore, status: boolean) {
-    return { pendingOrders: status };
+  
+  isPending(store: OrderBasketStore, status: boolean) {
+    const patientUuid = getPatientUuidFromUrl();
+    console.log("whaaats the staaaa", status, {...store.items,
+    [patientUuid]: {
+      orders: store.items?.[patientUuid]?.orders,
+      pendingOrders: status,
+    }},)
+    // const patientUuid = getPatientUuidFromUrl();
+    return {
+      ...store.items,
+      [patientUuid]: {
+        orders: store.items?.[patientUuid]?.orders,
+        pendingOrders: status,
+      },
+    };
   },
+
+  
 };
 
+
 export function getOrderItems(items: OrderBasketStore['items'], patientUuid: string): Array<OrderBasketItem> {
-  return items?.[patientUuid] ?? [];
+  return items?.[patientUuid]?.orders ?? [];
+}
+
+export function getOrderStatus(items: OrderBasketStore['items'], patientUuid) {
+  console.log("kjjjjjjjjjjjjj", patientUuid, items?.[patientUuid]?.pendingOrders, items)
+  return items?.[patientUuid]?.pendingOrders;
 }

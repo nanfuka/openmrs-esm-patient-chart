@@ -33,7 +33,7 @@ export interface OrderBasketProps {
 }
 
 const OrderBasket = connect<OrderBasketProps, OrderBasketStoreActions, OrderBasketStore, {}>(
-  ['items', 'pendingOrders'],
+  'items',
   orderBasketStoreActions,
 )(
   ({
@@ -42,6 +42,7 @@ const OrderBasket = connect<OrderBasketProps, OrderBasketStoreActions, OrderBask
     closeWorkspace,
     setItems,
     isPending,
+
   }: OrderBasketProps & OrderBasketStore & OrderBasketStoreActions) => {
     const patientOrderItems = getOrderItems(items, patientUuid);
     const { t } = useTranslation();
@@ -64,7 +65,7 @@ const OrderBasket = connect<OrderBasketProps, OrderBasketStoreActions, OrderBask
       isLoading: isLoadingOrders,
       isValidating,
     } = usePatientOrders(patientUuid, 'ACTIVE', config.careSettingUuid);
-
+console.log("xcvxcvxcvx", items?.[patientUuid]?.pendingOrders)
     const openStartVisitDialog = useCallback(() => {
       const dispose = showModal('start-visit-dialog', {
         patientUuid,

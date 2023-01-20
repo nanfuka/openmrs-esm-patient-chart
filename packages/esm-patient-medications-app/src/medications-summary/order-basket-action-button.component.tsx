@@ -4,7 +4,7 @@ import { Button, Tag } from '@carbon/react';
 import { ShoppingCart } from '@carbon/react/icons';
 import { useLayoutType, usePatient, useStore } from '@openmrs/esm-framework';
 import { useWorkspaces } from '@openmrs/esm-patient-common-lib';
-import { getOrderItems, orderBasketStore } from '../medications/order-basket-store';
+import { getOrderItems, getOrderStatus, orderBasketStore } from '../medications/order-basket-store';
 import styles from './order-basket-action-button.scss';
 import { useLaunchOrderBasket } from '../utils/launchOrderBasket';
 
@@ -12,14 +12,17 @@ const OrderBasketActionButton: React.FC = () => {
   const { t } = useTranslation();
   const layout = useLayoutType();
   const { workspaces } = useWorkspaces();
-  const { items, pendingOrders } = useStore(orderBasketStore);
+  const { items } = useStore(orderBasketStore);
   const { patientUuid } = usePatient();
 
   const isActive = workspaces.find(({ name }) => name.includes('order-basket'));
 
   const patientOrderItems = getOrderItems(items, patientUuid);
+  const patientOrderStatus = getOrderStatus(items, patientUuid);
 
   const { launchOrderBasket } = useLaunchOrderBasket(patientUuid);
+
+  console.log("hhhhhhhhhhhhhhhhhhhh",patientOrderStatus)
 
   if (layout === 'tablet')
     return (
@@ -32,7 +35,7 @@ const OrderBasketActionButton: React.FC = () => {
       >
         <div className={styles.elementContainer}>
           <ShoppingCart size={20} />
-          {pendingOrders ? (
+          {patientOrderStatus ? (
             <Tag className={styles.errorTag}>!</Tag>
           ) : patientOrderItems?.length > 0 ? (
             <Tag className={styles.countTag}>{patientOrderItems?.length}</Tag>
@@ -49,7 +52,7 @@ const OrderBasketActionButton: React.FC = () => {
       renderIcon={(props) => (
         <div className={styles.elementContainer}>
           <ShoppingCart size={20} {...props} />{' '}
-          {pendingOrders ? (
+          {patientOrderStatus ? (
             <Tag className={styles.errorTag}>!</Tag>
           ) : patientOrderItems?.length > 0 ? (
             <Tag className={styles.countTag}>{patientOrderItems?.length}</Tag>
