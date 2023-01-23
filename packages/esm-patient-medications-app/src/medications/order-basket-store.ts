@@ -36,33 +36,25 @@ export const orderBasketStoreActions = {
       },
     };
   },
-  
+
   isPending(store: OrderBasketStore, status: boolean) {
     const patientUuid = getPatientUuidFromUrl();
-    console.log("whaaats the staaaa", status, {...store.items,
-    [patientUuid]: {
-      orders: store.items?.[patientUuid]?.orders,
-      pendingOrders: status,
-    }},)
-    // const patientUuid = getPatientUuidFromUrl();
     return {
-      ...store.items,
-      [patientUuid]: {
-        orders: store.items?.[patientUuid]?.orders,
-        pendingOrders: status,
+      items: {
+        ...store.items,
+        [patientUuid]: {
+          orders: store.items?.[patientUuid]?.orders,
+          pendingOrders: status,
+        },
       },
     };
   },
-
-  
 };
-
 
 export function getOrderItems(items: OrderBasketStore['items'], patientUuid: string): Array<OrderBasketItem> {
   return items?.[patientUuid]?.orders ?? [];
 }
 
 export function getOrderStatus(items: OrderBasketStore['items'], patientUuid) {
-  console.log("kjjjjjjjjjjjjj", patientUuid, items?.[patientUuid]?.pendingOrders, items)
-  return items?.[patientUuid]?.pendingOrders;
+  return items?.[patientUuid]?.pendingOrders ?? false;
 }

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSWRConfig } from 'swr';
 import { connect } from 'unistore/react';
@@ -42,7 +42,6 @@ const OrderBasket = connect<OrderBasketProps, OrderBasketStoreActions, OrderBask
     closeWorkspace,
     setItems,
     isPending,
-
   }: OrderBasketProps & OrderBasketStore & OrderBasketStoreActions) => {
     const patientOrderItems = getOrderItems(items, patientUuid);
     const { t } = useTranslation();
@@ -65,7 +64,6 @@ const OrderBasket = connect<OrderBasketProps, OrderBasketStoreActions, OrderBask
       isLoading: isLoadingOrders,
       isValidating,
     } = usePatientOrders(patientUuid, 'ACTIVE', config.careSettingUuid);
-console.log("xcvxcvxcvx", items?.[patientUuid]?.pendingOrders)
     const openStartVisitDialog = useCallback(() => {
       const dispose = showModal('start-visit-dialog', {
         patientUuid,
@@ -154,23 +152,15 @@ console.log("xcvxcvxcvx", items?.[patientUuid]?.pendingOrders)
     };
 
     const { workspaces } = useWorkspaces();
-    const [minimised, setMinimised] = useState(false);
 
-    const currentWindowSize = workspaces.map((result) => result.additionalProps);
-
-    useEffect(() => {
-      if (currentWindowSize[0] === undefined) {
-        setMinimised(false);
-      } else {
-        setMinimised(true);
-      }
-    }, [currentWindowSize]);
+    const currentWindowSize = useMemo(
+      () => workspaces.find((workspace) => workspace.name === 'order-basket-workspace')?.additionalProps,
+      [workspaces.find((workspace) => workspace.name === 'order-basket-workspace')?.additionalProps],
+    );
 
     useEffect(() => {
-      if (minimised && medicationOrderFormItem && !orderFormSaved) {
-        isPending(true);
-      } else isPending(false);
-    }, [minimised, medicationOrderFormItem, isPending, orderFormSaved]);
+      isPending(currentWindowSize != undefined && medicationOrderFormItem && !orderFormSaved);
+    }, [currentWindowSize, medicationOrderFormItem, isPending, orderFormSaved]);
 
     if (isMedicationOrderFormVisible) {
       return (

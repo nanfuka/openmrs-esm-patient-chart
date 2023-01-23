@@ -22,8 +22,6 @@ const OrderBasketActionButton: React.FC = () => {
 
   const { launchOrderBasket } = useLaunchOrderBasket(patientUuid);
 
-  console.log("hhhhhhhhhhhhhhhhhhhh",patientOrderStatus)
-
   if (layout === 'tablet')
     return (
       <Button
