@@ -50,6 +50,7 @@ const OrderBasket = connect<OrderBasketProps, OrderBasketStoreActions, OrderBask
     const headerTitle = t('activeMedicationsHeaderTitle', 'active medications');
     const isTablet = useLayoutType() === 'tablet';
     const config = useConfig() as ConfigObject;
+    const { workspaces } = useWorkspaces();
     const [orderFormSaved, setOrderFormSaved] = useState(false);
     const { currentVisit } = useVisitOrOfflineVisit(patientUuid);
     const { encounterUuid, creatingEncounterError } = useCurrentOrderBasketEncounter(patientUuid);
@@ -151,11 +152,9 @@ const OrderBasket = connect<OrderBasketProps, OrderBasketStoreActions, OrderBask
       );
     };
 
-    const { workspaces } = useWorkspaces();
-
     const currentWindowSize = useMemo(
       () => workspaces.find((workspace) => workspace.name === 'order-basket-workspace')?.additionalProps,
-      [workspaces.find((workspace) => workspace.name === 'order-basket-workspace')?.additionalProps],
+      [workspaces, workspaces.find((workspace) => workspace.name === 'order-basket-workspace')?.additionalProps],
     );
 
     useEffect(() => {
