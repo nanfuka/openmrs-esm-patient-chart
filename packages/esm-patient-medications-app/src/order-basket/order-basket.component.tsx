@@ -156,6 +156,7 @@ const OrderBasket = connect<OrderBasketProps, OrderBasketStoreActions, OrderBask
       () => workspaces.find((workspace) => workspace.name === 'order-basket-workspace')?.additionalProps,
       [workspaces, workspaces.find((workspace) => workspace.name === 'order-basket-workspace')?.additionalProps],
     );
+console.log(currentWindowSize)
 
     useEffect(() => {
       isPending(currentWindowSize != undefined && medicationOrderFormItem && !orderFormSaved);
