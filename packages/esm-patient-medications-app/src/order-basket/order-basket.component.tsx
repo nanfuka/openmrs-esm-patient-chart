@@ -152,14 +152,14 @@ const OrderBasket = connect<OrderBasketProps, OrderBasketStoreActions, OrderBask
       );
     };
 
-    const currentWindowSize = useMemo(
-      () => workspaces.find((workspace) => workspace.name === 'order-basket-workspace')?.additionalProps,
-      [workspaces, workspaces.find((workspace) => workspace.name === 'order-basket-workspace')?.additionalProps],
+    const currentWindowSize: string = useMemo(
+      // @ts-ignore
+      () => workspaces.find((workspace) => workspace.name === 'order-basket-workspace')?.additionalProps?.windowsize,
+      [workspaces],
     );
-console.log(currentWindowSize)
 
     useEffect(() => {
-      isPending(currentWindowSize != undefined && medicationOrderFormItem && !orderFormSaved);
+      isPending(currentWindowSize === 'hidden' && medicationOrderFormItem && !orderFormSaved);
     }, [currentWindowSize, medicationOrderFormItem, isPending, orderFormSaved]);
 
     if (isMedicationOrderFormVisible) {
