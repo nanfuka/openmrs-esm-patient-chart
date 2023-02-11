@@ -2,8 +2,9 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSWRConfig } from 'swr';
 import { connect } from 'unistore/react';
-import { Button, ButtonSet, DataTableSkeleton, InlineNotification, ActionableNotification } from '@carbon/react';
-import { showModal, showToast, useConfig, useLayoutType, useSession } from '@openmrs/esm-framework';
+import { ArrowLeft } from '@carbon/react/icons';
+import { Tag, Layer, Button, ButtonSet, DataTableSkeleton, InlineNotification, ActionableNotification } from '@carbon/react';
+import { ConfigurableLink, showModal, showToast, useConfig, useLayoutType, useSession } from '@openmrs/esm-framework';
 import { EmptyState, ErrorState, useVisitOrOfflineVisit } from '@openmrs/esm-patient-common-lib';
 import { orderDrugs } from './drug-ordering';
 import { ConfigObject } from '../config-schema';
@@ -176,6 +177,31 @@ const OrderBasket = connect<OrderBasketProps, OrderBasketStoreActions, OrderBask
 
   return (
     <>
+    <div>
+    <Layer className={styles.returnButton}>
+          <div className={styles.backButton}>
+         
+          <ConfigurableLink to='jkhkjjk'>
+            <Button
+              kind="ghost"
+              renderIcon={(props) => <ArrowLeft {...props} size={24} />}
+              iconDescription={t('returnToTimeline', 'Return to timeline')}
+            >
+              <span>{t('backToOrderBasket', 'Back to order basket')}</span>
+            </Button>
+          </ConfigurableLink>        
+      </div>
+    </Layer>
+
+  <Layer className={styles.tagsLayer}>
+    <div  className={styles.allergies}>
+<p>Allergies (3)</p>
+<Tag type="red">Anti convulsants</Tag>
+<Tag type="red">Peanuts</Tag>
+<Tag type="red">Septrin</Tag>
+</div>
+    </Layer>
+    </div>
       <OrderBasketSearch onSearchResultClicked={handleSearchResultClicked} />
       <div className={styles.container}>
         <div className={styles.orderBasketContainer}>

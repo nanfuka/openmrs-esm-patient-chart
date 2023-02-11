@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Button, ClickableTile, Tile, SkeletonText, InlineNotification, ButtonSkeleton } from '@carbon/react';
 import { ShoppingCart } from '@carbon/react/icons';
 import { useTranslation } from 'react-i18next';
@@ -8,6 +8,7 @@ import { ConfigObject } from '../../config-schema';
 import styles from './order-basket-search-results.scss';
 import { getTemplateOrderBasketItem, useDrugSearch, useDrugTemplate } from './drug-search.resource';
 import { Drug } from '../../types/order';
+import { ArrowRight, ShoppingCartArrowDown, Search } from '@carbon/react/icons';
 
 export interface OrderBasketSearchResultsProps {
   searchTerm: string;
@@ -107,6 +108,7 @@ const DrugSearchResultItem: React.FC<DrugSearchResultItemProps> = ({ drug, onSea
     error: fetchingDrugOrderTemplatesError,
   } = useDrugTemplate(drug?.uuid);
   const { t } = useTranslation();
+  const [searchClicked, setSearchClicked] = useState(false);
   const config = useConfig() as ConfigObject;
   const orderItems: Array<OrderBasketItem> = useMemo(
     () =>
@@ -127,10 +129,11 @@ const DrugSearchResultItem: React.FC<DrugSearchResultItemProps> = ({ drug, onSea
           key={templates?.length ? templates[indx]?.uuid : drug?.uuid}
           role="listitem"
           className={isTablet ? `${styles.tabletSearchResultTile}` : `${styles.desktopSearchResultTile}`}
-          onClick={() => handleSearchResultClicked(orderItem, false)}
+          onClick={() => setSearchClicked(true)}
         >
           <div className={styles.searchResultTile}>
             <div className={`${styles.searchResultTileContent} ${styles.text02}`}>
+            <Search size={20}/>
               <p>
                 <span className={styles.productiveHeading01}>{drug?.display}</span>{' '}
                 {drug?.strength && <>&mdash; {drug?.strength.toLowerCase()}</>}{' '}
@@ -153,7 +156,7 @@ const DrugSearchResultItem: React.FC<DrugSearchResultItemProps> = ({ drug, onSea
                 </p>
               )}
             </div>
-            <Button
+            {/* <Button
               className={styles.addToBasketButton}
               kind="ghost"
               hasIconOnly={true}
@@ -162,8 +165,38 @@ const DrugSearchResultItem: React.FC<DrugSearchResultItemProps> = ({ drug, onSea
               onClick={() => handleSearchResultClicked(orderItem, true)}
               tooltipPosition="left"
               tooltipAlignment="end"
-            />
+            /> */}
           </div>
+          {searchClicked && (
+            <div>        
+          <hr/>
+          <span className={styles.orderIcons}>
+          
+             <div className={styles.backButton}>
+            <Button
+              kind="ghost"
+              renderIcon={(props) => <ShoppingCartArrowDown size={20} {...props} />}
+              iconDescription={t('directlyAddToBasket', 'Immediately add to basket')}
+              onClick={() => handleSearchResultClicked(orderItem, true)}
+              size="sm"
+              
+            >
+              <span>{t('addToBasket', 'Add to basket')}</span>
+            </Button>
+          </div>
+          <div className={styles.backButton}>
+            <Button
+              kind="ghost"
+              renderIcon={(props) => <ArrowRight size={24} {...props} />}
+              iconDescription="Order form"
+              size="sm"              
+            >
+              <span>{t('Order form', 'Order form')}</span>
+            </Button>
+          </div>
+            </span>
+            </div>
+          )}
         </ClickableTile>
       ))}
     </>

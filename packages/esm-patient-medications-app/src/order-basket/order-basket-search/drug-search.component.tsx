@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Search } from '@carbon/react';
+import { Search, Button  } from '@carbon/react';
 import { useLayoutType } from '@openmrs/esm-framework';
 import OrderBasketSearchResults from './order-basket-search-results.component';
 import { OrderBasketItem } from '../../types/order-basket-item';
@@ -16,7 +16,8 @@ export default function OrderBasketSearch({ onSearchResultClicked }: OrderBasket
   const [searchTerm, setSearchTerm] = useState('');
 
   return (
-    <div className={styles.searchPopupContainer}>
+    <div>
+      <div className={styles.searchPopupContainer}>
       <Search
         size="lg"
         light={isTablet}
@@ -25,6 +26,10 @@ export default function OrderBasketSearch({ onSearchResultClicked }: OrderBasket
         labelText={t('searchFieldPlaceholder', 'Search for a drug or orderset (e.g. "Aspirin")')}
         onChange={(e) => setSearchTerm(e.currentTarget?.value ?? '')}
       />
+       <Button  iconDescription="Basic search" size="lg" kind="secondary">
+      {t('search', 'Search')}
+    </Button>
+    </div>
       <OrderBasketSearchResults
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}

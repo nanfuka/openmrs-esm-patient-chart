@@ -49,8 +49,8 @@ function setupOpenMRS() {
         load: getAsyncLifecycle(() => import('./medications/root-order-basket'), options),
         meta: {
           title: {
-            key: 'orderBasket',
-            default: 'Order Basket',
+            key: 'addDrugOrder',
+            default: 'Add drug order',
           },
           type: 'order',
         },

@@ -1,8 +1,10 @@
 @import "../../root";
-
-.searchPopupContainer {
+ .searchPopupContainer {
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
+
 
 .searchPopup {
   /* Since there's no native (search) popup which displays some items we're using a Tile instead.
@@ -19,3 +21,4 @@
 .searchPopupContainer :global(.cds--search-input:focus) {
   outline: 2px solid #ff832b;
 }
+       

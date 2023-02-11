@@ -3,12 +3,20 @@
 @import "../../root";
 
 .container {
-  margin: spacing.$spacing-03 spacing.$spacing-05 spacing.$spacing-03;
+  margin-right: 0;
+  border: 1px solid #e0e0e0;
+}
+.orderIcons{
+  display: flex;
+  justify-content: right;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .desktopSearchResultTile {
-  padding: spacing.$spacing-03 spacing.$spacing-05;
-  border-left: 4px solid var(--brand-03);
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
 
   &:not(:last-of-type) {
     margin-bottom: spacing.$spacing-03;
@@ -19,7 +27,7 @@
   padding: spacing.$spacing-03 spacing.$spacing-05;
   margin-top: 5px;
   border-left: 2px solid var(--brand-03);
-  background-color: $ui-02;
+  // background-color: $ui-02;
 
   &:not(:last-of-type) {
     margin-bottom: 1rem;
@@ -59,7 +67,14 @@
 }
 
 .searchResultTileContent {
-  flex: 1 1 auto;
+  // flex: 1 1 auto;
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.searchResultTileContent p{
+  margin-left: 1rem;
+  margin-top: -0.2rem;
 }
 
 .addToBasketButton {
