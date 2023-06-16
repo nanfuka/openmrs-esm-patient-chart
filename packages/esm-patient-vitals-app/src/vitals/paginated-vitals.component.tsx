@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   DataTable,
   DataTableRow,
@@ -13,6 +13,7 @@ import {
 import { useLayoutType, usePagination } from '@openmrs/esm-framework';
 import { PatientChartPagination } from '@openmrs/esm-patient-common-lib';
 import styles from './paginated-vitals.scss';
+import { orderBy } from 'lodash-es';
 
 interface PaginatedVitalsProps {
   tableRows: Array<DataTableRow>;
@@ -23,7 +24,6 @@ interface PaginatedVitalsProps {
 }
 
 const PaginatedVitals: React.FC<PaginatedVitalsProps> = ({ tableRows, pageSize, pageUrl, urlLabel, tableHeaders }) => {
-  const { results: paginatedVitals, goTo, currentPage } = usePagination(tableRows, pageSize);
   const isTablet = useLayoutType() === 'tablet';
 
   const StyledTableCell = ({ interpretation, children }: { interpretation: string; children: React.ReactNode }) => {
@@ -41,9 +41,39 @@ const PaginatedVitals: React.FC<PaginatedVitalsProps> = ({ tableRows, pageSize, 
     }
   };
 
+  const [sortParams, setSortParams] = useState({ key: '', order: 'none' });
+
+  const sortDate = (myArray, order) =>
+    order === 'ASC'
+      ? orderBy(myArray, [(obj) => new Date(obj.encounterDate).getTime()], ['desc'])
+      : orderBy(myArray, [(obj) => new Date(obj.encounterDate).getTime()], ['asc']);
+
+  const { key, order } = sortParams;
+
+  const sortedData =
+    key === 'encounterDate'
+      ? sortDate(tableRows, order)
+      : order === 'DESC'
+      ? orderBy(tableRows, [key], ['desc'])
+      : orderBy(tableRows, [key], ['asc']);
+
+  function customSortRow(vitalA, vitalB, { sortDirection, sortStates, ...props }) {
+    const { key } = props;
+    setSortParams({ key, order: sortDirection });
+  }
+
+  const { results: paginatedVitals, goTo, currentPage } = usePagination(sortedData, pageSize);
+
   return (
     <div>
-      <DataTable rows={paginatedVitals} headers={tableHeaders} isSortable size={isTablet ? 'lg' : 'sm'} useZebraStyles>
+      <DataTable
+        rows={paginatedVitals}
+        sortRow={customSortRow}
+        headers={tableHeaders}
+        isSortable
+        size={isTablet ? 'lg' : 'sm'}
+        useZebraStyles
+      >
         {({ rows, headers, getHeaderProps, getTableProps }) => (
           <TableContainer>
             <Table {...getTableProps()} className={styles.customRow}>

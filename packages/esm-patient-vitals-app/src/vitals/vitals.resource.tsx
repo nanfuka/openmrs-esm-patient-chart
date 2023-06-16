@@ -1,9 +1,10 @@
-import useSWR from 'swr';
-import { openmrsFetch, fhirBaseUrl, useConfig, FHIRResource } from '@openmrs/esm-framework';
+import useSwrInfinite from 'swr/infinite';
+import { openmrsFetch, fhirBaseUrl, useConfig, FHIRResource, FetchResponse } from '@openmrs/esm-framework';
 import { ObsMetaInfo, ConceptMetadata, useVitalsConceptMetadata } from '@openmrs/esm-patient-common-lib';
 import { PatientVitalsAndBiometrics } from './vitals-biometrics-form/vitals-biometrics-form.component';
 import { calculateBMI } from './vitals-biometrics-form/vitals-biometrics-form.utils';
 import { ConfigObject } from '../config-schema';
+import { useCallback, useMemo } from 'react';
 
 interface ObsRecord {
   concept: string;
@@ -60,17 +61,35 @@ export function useVitals(patientUuid: string, includeBiometrics: boolean = fals
         .filter((uuid) => !biometricsConcepts.includes(uuid))
         .join(',');
 
-  const apiUrl =
-    `${fhirBaseUrl}/Observation?subject:Patient=${patientUuid}&code=` +
-    conceptUuids +
-    '&_summary=data&_sort=-date' +
-    `&_count=${pageSize}
-        `;
-
-  const { data, error, isLoading, isValidating, mutate } = useSWR<{ data: VitalsFetchResponse }, Error>(
-    apiUrl,
-    openmrsFetch,
+  const getUrl = useCallback(
+    (page, prevPageData) => {
+      if (prevPageData && !prevPageData?.data?.link.some((link) => link.relation === 'next')) {
+        return null;
+      }
+      let url =
+        `${fhirBaseUrl}/Observation?subject:Patient=${patientUuid}&code=` +
+        Object.values(concepts).join(',') +
+        '&_summary=data&_sort=-date' +
+        `&_count=${pageSize}
+          `;
+      if (page) {
+        url += `&_getpagesoffset=${page * pageSize}`;
+      }
+      return url;
+    },
+    [pageSize],
   );
+
+  const { data, isValidating, setSize, error, size, mutate } = useSwrInfinite<
+    FetchResponse<{
+      link: any;
+      entry: any;
+      results: Array<VitalsFetchResponse>;
+      links: Array<{ relation: 'prev' | 'next' }>;
+      total: number;
+    }>,
+    Error
+  >(getUrl, openmrsFetch);
 
   const getVitalSignKey = (conceptUuid: string): string => {
     switch (conceptUuid) {
@@ -106,7 +125,7 @@ export function useVitals(patientUuid: string, includeBiometrics: boolean = fals
   });
 
   const vitalsHashTable = new Map<string, Partial<PatientVitals>>();
-  const vitalsResponse = data?.data?.entry?.map((entry) => entry.resource ?? []).map(mapVitalsProperties);
+  const vitalsResponse = data?.[0]?.data?.entry?.map((entry) => entry.resource ?? []).map(mapVitalsProperties);
 
   vitalsResponse?.map((vitalSign) => {
     const recordedDate = new Date(new Date(vitalSign.recordedDate)).toISOString();
@@ -141,13 +160,23 @@ export function useVitals(patientUuid: string, includeBiometrics: boolean = fals
     };
   });
 
-  return {
-    vitals: formattedVitals,
-    isError: error,
-    isLoading,
-    isValidating,
-    mutate,
-  };
+  const results = useMemo(
+    () => ({
+      k: data,
+      vitals: data ? [].concat(formattedVitals) : null,
+      isLoading: !data && !error,
+      isError: error,
+      hasMore: data?.length ? !!data?.[data?.length - 1].data?.link?.some((link) => link.relation === 'next') : false,
+      isValidating,
+      loadingNewData: isValidating,
+      setPage: setSize,
+      currentPage: size,
+      totalResults: data?.[0]?.data?.total ?? null,
+      mutate,
+    }),
+    [data, isValidating, error, setSize, size],
+  );
+  return results;
 }
 
 export function savePatientVitals(
