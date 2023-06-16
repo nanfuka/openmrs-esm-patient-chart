@@ -71,7 +71,7 @@ export function useVitals(patientUuid: string, includeBiometrics: boolean = fals
       }
       return url;
     },
-    [pageSize, concepts, patientUuid],
+    [concepts, patientUuid],
   );
 
   const { data, isValidating, setSize, error, size, mutate } = useSwrInfinite<
