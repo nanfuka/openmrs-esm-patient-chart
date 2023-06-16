@@ -55,12 +55,6 @@ export function useVitals(patientUuid: string, includeBiometrics: boolean = fals
   const { conceptMetadata } = useVitalsConceptMetadata();
   const biometricsConcepts = [concepts.heightUuid, concepts.midUpperArmCircumferenceUuid, concepts.weightUuid];
 
-  const conceptUuids = includeBiometrics
-    ? Object.values(concepts).join(',')
-    : Object.values(concepts)
-        .filter((uuid) => !biometricsConcepts.includes(uuid))
-        .join(',');
-
   const getUrl = useCallback(
     (page, prevPageData) => {
       if (prevPageData && !prevPageData?.data?.link.some((link) => link.relation === 'next')) {
@@ -162,7 +156,6 @@ export function useVitals(patientUuid: string, includeBiometrics: boolean = fals
 
   const results = useMemo(
     () => ({
-      k: data,
       vitals: data ? [].concat(formattedVitals) : null,
       isLoading: !data && !error,
       isError: error,
@@ -174,7 +167,7 @@ export function useVitals(patientUuid: string, includeBiometrics: boolean = fals
       totalResults: data?.[0]?.data?.total ?? null,
       mutate,
     }),
-    [data, isValidating, error, setSize, size],
+    [data, isValidating, error, setSize, size, formattedVitals, mutate],
   );
   return results;
 }
