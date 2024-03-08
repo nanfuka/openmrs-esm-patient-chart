@@ -1,3 +1,5 @@
+import { restBaseUrl } from "@openmrs/esm-framework";
+
 export const mockProgramResponse = {
   uuid: '8ba6c08f-66d9-4a18-a233-5f658b1755bf',
   patient: {
@@ -119,7 +121,7 @@ export const mockProgramsResponse = {
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrs/ws/rest/v1/program/64f950e6-1b07-4ac0-8e7e-f3e148f3463f',
+              uri: `http://localhost:8090/openmrs/${restBaseUrl}/program/64f950e6-1b07-4ac0-8e7e-f3e148f3463f`,
             },
           ],
         },
@@ -129,11 +131,11 @@ export const mockProgramsResponse = {
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrs/ws/rest/v1/programenrollment/b033f8c3-7e0b-4118-aa1d-76c550f2978d',
+            uri: `http://localhost:8090/openmrs/${restBaseUrl}/programenrollment/b033f8c3-7e0b-4118-aa1d-76c550f2978d`,
           },
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrs/ws/rest/v1/programenrollment/b033f8c3-7e0b-4118-aa1d-76c550f2978d?v=full',
+            uri: `http://localhost:8090/openmrs/${restBaseUrl}/programenrollment/b033f8c3-7e0b-4118-aa1d-76c550f2978d?v=full`,
           },
         ],
       },

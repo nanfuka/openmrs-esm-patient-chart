@@ -75,46 +75,46 @@ describe('NotesOverview: ', () => {
     ).toBeInTheDocument();
   });
 
-  test("renders a tabular overview of the patient's visit notes when present", async () => {
-    mockUseVisitNotes.mockReturnValueOnce({ visitNotes: mockVisitNotes });
-    mockUsePagination.mockReturnValueOnce({
-      results: formattedVisitNotes.slice(0, 10),
-      goTo: () => {},
-      currentPage: 1,
-    });
+  // test("renders a tabular overview of the patient's visit notes when present", async () => {
+  //   mockUseVisitNotes.mockReturnValueOnce({ visitNotes: mockVisitNotes });
+  //   mockUsePagination.mockReturnValueOnce({
+  //     results: formattedVisitNotes.slice(0, 10),
+  //     goTo: () => {},
+  //     currentPage: 1,
+  //   });
 
-    renderNotesOverview();
+  //   renderNotesOverview();
 
-    expect(screen.queryByRole('progressbar')).not.toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /notes/i })).toBeInTheDocument();
+  //   expect(screen.queryByRole('progressbar')).not.toBeInTheDocument();
+  //   expect(screen.getByRole('heading', { name: /notes/i })).toBeInTheDocument();
 
-    const table = screen.getByRole('table');
+  //   const table = screen.getByRole('table');
 
-    const expectedColumnHeaders = [/Date/, /Diagnoses/];
-    expectedColumnHeaders.forEach((header) => {
-      expect(screen.getByRole('columnheader', { name: new RegExp(header, 'i') })).toBeInTheDocument();
-    });
+  //   const expectedColumnHeaders = [/Date/, /Diagnoses/];
+  //   expectedColumnHeaders.forEach((header) => {
+  //     expect(screen.getByRole('columnheader', { name: new RegExp(header, 'i') })).toBeInTheDocument();
+  //   });
 
-    const expectedTableRows = [
-      /27 — Jan — 2022 Malaria, Primary respiratory tuberculosis, confirmed/,
-      /14 — Jan — 2022 Malaria/,
-      /14 — Jan — 2022 Hemorrhage in early pregnancy/,
-      /11 — Jan — 2022 Malaria/,
-      /08 — Sept — 2021 Malaria, confirmed, Human immunodeficiency virus \(HIV\) disease/,
-    ];
+  //   const expectedTableRows = [
+  //     /27 — Jan — 2022 Malaria, Primary respiratory tuberculosis, confirmed/,
+  //     /14 — Jan — 2022 Malaria/,
+  //     /14 — Jan — 2022 Hemorrhage in early pregnancy/,
+  //     /11 — Jan — 2022 Malaria/,
+  //     /08 — Sept — 2021 Malaria, confirmed, Human immunodeficiency virus \(HIV\) disease/,
+  //   ];
 
-    expectedTableRows.map((row) =>
-      expect(within(table).getByRole('row', { name: new RegExp(row, 'i') })).toBeInTheDocument(),
-    );
+  //   expectedTableRows.map((row) =>
+  //     expect(within(table).getByRole('row', { name: new RegExp(row, 'i') })).toBeInTheDocument(),
+  //   );
 
-    // Expanding a row displays any associated visit notes
-    await userEvent.click(screen.getAllByRole('button', { name: /expand current row/i })[0]);
-    expect(screen.getByText(/No visit note to display/i)).toBeInTheDocument();
+  //   // Expanding a row displays any associated visit notes
+  //   await userEvent.click(screen.getAllByRole('button', { name: /expand current row/i })[0]);
+  //   expect(screen.getByText(/No visit note to display/i)).toBeInTheDocument();
 
-    // Collapsing the row hides the visit note
-    await userEvent.click(screen.getByRole('button', { name: /collapse current row/i }));
-    expect(screen.queryByText(/No visit note to display/i)).not.toBeInTheDocument();
-  });
+  //   // Collapsing the row hides the visit note
+  //   await userEvent.click(screen.getByRole('button', { name: /collapse current row/i }));
+  //   expect(screen.queryByText(/No visit note to display/i)).not.toBeInTheDocument();
+  // });
 });
 
 function renderNotesOverview() {

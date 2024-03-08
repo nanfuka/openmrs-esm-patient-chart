@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import useSWRImmutable from 'swr/immutable';
 import { renderHook, waitFor } from '@testing-library/react';
-import { getDefaultsFromConfigSchema, openmrsFetch, useConfig } from '@openmrs/esm-framework';
+import { getDefaultsFromConfigSchema, openmrsFetch, restBaseUrl, useConfig } from '@openmrs/esm-framework';
 import { useTestTypes } from './useTestTypes';
 import { configSchema } from '../../config-schema';
 
@@ -9,7 +9,7 @@ jest.mock('swr/immutable');
 
 jest.mock('@openmrs/esm-framework', () => ({
   ...jest.requireActual('@openmrs/esm-framework'),
-  restBaseUrl: '/ws/rest/v1',
+  restBaseUrl: restBaseUrl,
 }));
 
 const mockOpenrsFetch = openmrsFetch as jest.Mock;
@@ -52,7 +52,7 @@ describe('useTestTypes is configurable', () => {
       orders: { labOrderableConcepts: [] },
     });
     const { result } = renderHook(() => useTestTypes());
-    expect(mockOpenrsFetch).toHaveBeenCalledWith('/ws/rest/v1/concept?class=Test');
+    expect(mockOpenrsFetch).toHaveBeenCalledWith(`/${restBaseUrl}/concept?class=Test`);
     await waitFor(() => expect(result.current.isLoading).toBeFalsy());
     expect(result.current.error).toBeFalsy();
     expect(result.current.testTypes).toEqual([expect.objectContaining({ label: 'Test concept' })]);
@@ -60,7 +60,7 @@ describe('useTestTypes is configurable', () => {
 
   it('should return children of labOrderableConcepts when provided', async () => {
     const { result } = renderHook(() => useTestTypes());
-    expect(mockOpenrsFetch).toHaveBeenCalledWith(expect.stringContaining('/ws/rest/v1/concept/'));
+    expect(mockOpenrsFetch).toHaveBeenCalledWith(expect.stringContaining(`/${restBaseUrl}/concept/`));
     await waitFor(() => expect(result.current.isLoading).toBeFalsy());
     expect(result.current.error).toBeFalsy();
     expect(result.current.testTypes).toEqual([expect.objectContaining({ label: 'Configured concept' })]);

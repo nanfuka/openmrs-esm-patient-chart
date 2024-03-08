@@ -2,7 +2,7 @@ import React from 'react';
 import { of, throwError } from 'rxjs';
 import { screen, render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { saveVisit, showSnackbar, useConfig } from '@openmrs/esm-framework';
+import { restBaseUrl, saveVisit, showSnackbar, useConfig } from '@openmrs/esm-framework';
 import { mockLocations, mockVisitTypes } from '__mocks__';
 import { mockPatient } from 'tools';
 import { useVisitAttributeType } from '../hooks/useVisitAttributeType';
@@ -79,7 +79,7 @@ jest.mock('../hooks/useVisitAttributeType', () => ({
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8080/openmrs/ws/rest/v1/concept/66cdc0a1-aa19-4676-af51-80f66d78d9eb',
+            uri: `http://localhost:8080/openmrs/${restBaseUrl}/concept/66cdc0a1-aa19-4676-af51-80f66d78d9eb`,
             resourceAlias: 'concept',
           },
         ],
@@ -90,7 +90,7 @@ jest.mock('../hooks/useVisitAttributeType', () => ({
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8080/openmrs/ws/rest/v1/concept/66cdc0a1-aa19-4676-af51-80f66d78d9ec',
+            uri: `http://localhost:8080/openmrs/${restBaseUrl}/concept/66cdc0a1-aa19-4676-af51-80f66d78d9ec`,
             resourceAlias: 'concept',
           },
         ],

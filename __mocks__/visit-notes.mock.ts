@@ -1,3 +1,5 @@
+import { restBaseUrl } from "@openmrs/esm-framework";
+
 export const currentSessionResponse = {
   data: {
     locale: 'en_GB',
@@ -137,7 +139,7 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
         },
       ],
     },
@@ -166,7 +168,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/locationtag/37dd4458-dc9e-4ae6-a1f1-789c1162d37b',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/locationtag/37dd4458-dc9e-4ae6-a1f1-789c1162d37b`,
             },
           ],
         },
@@ -176,7 +178,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/locationtag/8d4626ca-7abd-42ad-be48-56767bbcf272',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/locationtag/8d4626ca-7abd-42ad-be48-56767bbcf272`,
             },
           ],
         },
@@ -186,7 +188,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/locationtag/b8bbf83e-645f-451f-8efe-a0db56f09676',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/locationtag/b8bbf83e-645f-451f-8efe-a0db56f09676`,
             },
           ],
         },
@@ -196,7 +198,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/locationtag/1c783dca-fd54-4ea8-a0fc-2875374e9cb6',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/locationtag/1c783dca-fd54-4ea8-a0fc-2875374e9cb6`,
             },
           ],
         },
@@ -207,7 +209,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/5035669f-00c0-4187-9ed6-f6b85128fb26',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/5035669f-00c0-4187-9ed6-f6b85128fb26`,
           },
         ],
       },
@@ -226,11 +228,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764?v=full`,
         },
       ],
       resourceVersion: '2.0',
@@ -246,7 +248,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79`,
           },
         ],
       },
@@ -259,11 +261,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/form/c75f120a-04ec-11e3-8780-2b40bef9a44b',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/form/c75f120a-04ec-11e3-8780-2b40bef9a44b`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/form/c75f120a-04ec-11e3-8780-2b40bef9a44b?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/form/c75f120a-04ec-11e3-8780-2b40bef9a44b?v=full`,
         },
       ],
       resourceVersion: '1.9',
@@ -278,11 +280,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79?v=full`,
         },
       ],
       resourceVersion: '1.8',
@@ -298,7 +300,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/162169AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/162169AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
             },
           ],
         },
@@ -308,7 +310,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
             },
           ],
         },
@@ -324,7 +326,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
             },
           ],
         },
@@ -335,7 +337,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557`,
             },
           ],
         },
@@ -348,11 +350,11 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/c6a46535-2d4a-4bf0-b8eb-e1f9887c9191',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/c6a46535-2d4a-4bf0-b8eb-e1f9887c9191`,
           },
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/c6a46535-2d4a-4bf0-b8eb-e1f9887c9191?v=full',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/c6a46535-2d4a-4bf0-b8eb-e1f9887c9191?v=full`,
           },
         ],
         resourceVersion: '1.11',
@@ -366,7 +368,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
             },
           ],
         },
@@ -376,7 +378,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
             },
           ],
         },
@@ -394,7 +396,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159946AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159946AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -404,7 +406,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -416,7 +418,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f46b209a-c93a-4913-ae43-e63e8bd5e3a9',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f46b209a-c93a-4913-ae43-e63e8bd5e3a9`,
                 },
               ],
             },
@@ -429,7 +431,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
                 },
               ],
             },
@@ -440,7 +442,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557`,
                 },
               ],
             },
@@ -458,11 +460,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -473,7 +475,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -483,7 +485,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -497,7 +499,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107494BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107494BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -507,7 +509,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/127621BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/127621BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -517,7 +519,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134530BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134530BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -527,7 +529,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -537,7 +539,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134531BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134531BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -549,7 +551,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16472FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16472FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -561,7 +563,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/137043ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/137043ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -571,7 +573,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217084ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217084ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -581,7 +583,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236982ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236982ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -592,11 +594,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -607,11 +609,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f0af2e84-ab7e-44c4-a028-b958e40aeefa',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f0af2e84-ab7e-44c4-a028-b958e40aeefa`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f0af2e84-ab7e-44c4-a028-b958e40aeefa?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f0af2e84-ab7e-44c4-a028-b958e40aeefa?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -625,7 +627,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/1284AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/1284AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -635,7 +637,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -647,7 +649,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f46b209a-c93a-4913-ae43-e63e8bd5e3a9',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f46b209a-c93a-4913-ae43-e63e8bd5e3a9`,
                 },
               ],
             },
@@ -660,7 +662,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
                 },
               ],
             },
@@ -671,7 +673,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557`,
                 },
               ],
             },
@@ -689,11 +691,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -704,7 +706,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -714,7 +716,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d4918b0-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d4918b0-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -728,7 +730,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/130754BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/130754BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -738,7 +740,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/83994BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/83994BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -748,7 +750,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -758,7 +760,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134406BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134406BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -768,7 +770,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/142032BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134406BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -778,7 +780,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16604BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16604BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -788,7 +790,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134405BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134405BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -798,7 +800,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/142031BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/142031BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -811,7 +813,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/4639FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/4639FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -823,7 +825,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/88127ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/88127ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -833,7 +835,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/143612ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/143612ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -843,7 +845,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/134582ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/134582ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -853,7 +855,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/267991ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/267991ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -863,7 +865,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/73619ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/73619ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -873,7 +875,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/182724ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/182724ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -883,7 +885,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/285654ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/285654ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -893,7 +895,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/133986ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/133986ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -903,7 +905,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/286848ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/286848ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -913,7 +915,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/144370ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/144370ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -924,11 +926,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -939,11 +941,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/6f2a328a-ccdd-405b-b36d-90ef8278566a',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/6f2a328a-ccdd-405b-b36d-90ef8278566a`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/6f2a328a-ccdd-405b-b36d-90ef8278566a?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/6f2a328a-ccdd-405b-b36d-90ef8278566a?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -957,7 +959,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -967,7 +969,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -979,7 +981,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f46b209a-c93a-4913-ae43-e63e8bd5e3a9',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f46b209a-c93a-4913-ae43-e63e8bd5e3a9`,
                 },
               ],
             },
@@ -992,7 +994,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
                 },
               ],
             },
@@ -1003,7 +1005,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557`,
                 },
               ],
             },
@@ -1021,11 +1023,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -1036,7 +1038,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -1046,7 +1048,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -1060,7 +1062,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1070,7 +1072,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134379BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134379BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1080,7 +1082,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134385BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134385BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1090,7 +1092,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134378BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134378BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1103,7 +1105,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16025FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16025FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -1115,7 +1117,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132795ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132795ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1125,7 +1127,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236985ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236985ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1135,7 +1137,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132796ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132796ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1145,7 +1147,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/216550ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/216550ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1156,11 +1158,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -1171,11 +1173,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/712a20db-c6dc-4ed0-8f6d-8e2f4f523123',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/712a20db-c6dc-4ed0-8f6d-8e2f4f523123`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/712a20db-c6dc-4ed0-8f6d-8e2f4f523123?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/712a20db-c6dc-4ed0-8f6d-8e2f4f523123?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -1188,7 +1190,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
             },
           ],
         },
@@ -1199,7 +1201,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557`,
             },
           ],
         },
@@ -1211,11 +1213,11 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f46b209a-c93a-4913-ae43-e63e8bd5e3a9',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f46b209a-c93a-4913-ae43-e63e8bd5e3a9`,
           },
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f46b209a-c93a-4913-ae43-e63e8bd5e3a9?v=full',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f46b209a-c93a-4913-ae43-e63e8bd5e3a9?v=full`,
           },
         ],
         resourceVersion: '1.11',
@@ -1229,7 +1231,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
             },
           ],
         },
@@ -1239,7 +1241,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
             },
           ],
         },
@@ -1257,7 +1259,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -1267,7 +1269,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -1279,7 +1281,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/5cb19a11-6171-4bc6-b00b-8db5c6385539',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/5cb19a11-6171-4bc6-b00b-8db5c6385539`,
                 },
               ],
             },
@@ -1292,7 +1294,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
                 },
               ],
             },
@@ -1303,7 +1305,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557`,
                 },
               ],
             },
@@ -1321,11 +1323,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -1336,7 +1338,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -1346,7 +1348,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -1360,7 +1362,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1370,7 +1372,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134379BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134379BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1380,7 +1382,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134385BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134385BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1390,7 +1392,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134378BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134378BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1403,7 +1405,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16025FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16025FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -1415,7 +1417,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132795ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132795ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1425,7 +1427,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236985ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236985ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1435,7 +1437,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132796ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132796ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1445,7 +1447,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/216550ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/216550ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1456,11 +1458,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -1471,11 +1473,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/2b1b7489-9fba-4cd1-9d14-94a41d464d42',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/2b1b7489-9fba-4cd1-9d14-94a41d464d42`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/2b1b7489-9fba-4cd1-9d14-94a41d464d42?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/2b1b7489-9fba-4cd1-9d14-94a41d464d42?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -1489,7 +1491,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159946AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159946AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -1499,7 +1501,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -1511,7 +1513,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/5cb19a11-6171-4bc6-b00b-8db5c6385539',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/5cb19a11-6171-4bc6-b00b-8db5c6385539`,
                 },
               ],
             },
@@ -1524,7 +1526,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
                 },
               ],
             },
@@ -1535,7 +1537,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557`,
                 },
               ],
             },
@@ -1553,11 +1555,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107495BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107495BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107495BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107495BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -1568,7 +1570,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -1578,7 +1580,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -1592,7 +1594,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134532BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134532BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1602,7 +1604,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107495BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107495BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1612,7 +1614,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134533BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134533BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1624,7 +1626,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16473FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16473FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -1636,7 +1638,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236983ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236983ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1646,7 +1648,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/137044ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/137044ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1656,7 +1658,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217085ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217085ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1667,11 +1669,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -1682,11 +1684,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/2adf03b2-1132-4274-aa7b-082fedbc2aec',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/2adf03b2-1132-4274-aa7b-082fedbc2aec`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/2adf03b2-1132-4274-aa7b-082fedbc2aec?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/2adf03b2-1132-4274-aa7b-082fedbc2aec?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -1700,7 +1702,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/1284AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/1284AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -1710,7 +1712,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -1722,7 +1724,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/5cb19a11-6171-4bc6-b00b-8db5c6385539',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/5cb19a11-6171-4bc6-b00b-8db5c6385539`,
                 },
               ],
             },
@@ -1735,7 +1737,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
                 },
               ],
             },
@@ -1746,7 +1748,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557`,
                 },
               ],
             },
@@ -1764,11 +1766,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/1546c5f1-f0e1-4f15-bcc5-776890bae597',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/1546c5f1-f0e1-4f15-bcc5-776890bae597`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/1546c5f1-f0e1-4f15-bcc5-776890bae597?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/1546c5f1-f0e1-4f15-bcc5-776890bae597?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -1779,7 +1781,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -1789,7 +1791,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d4918b0-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d4918b0-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -1803,7 +1805,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/119687BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/119687BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1813,7 +1815,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/143801BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/143801BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1823,7 +1825,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/131671BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/131671BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1833,7 +1835,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/54745BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/54745BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1843,7 +1845,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/1546c5f1-f0e1-4f15-bcc5-776890bae597',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/1546c5f1-f0e1-4f15-bcc5-776890bae597`,
                     },
                   ],
                 },
@@ -1853,7 +1855,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/143800BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/143800BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1866,7 +1868,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/115162ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/115162ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1876,7 +1878,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/166997ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/166997ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1886,7 +1888,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/155237ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/155237ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1896,7 +1898,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/38963ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/38963ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1906,7 +1908,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/241413ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/241413ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1916,7 +1918,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/143857ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/143857ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1926,7 +1928,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/210791ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/210791ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -1937,11 +1939,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/152306AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -1952,11 +1954,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/efe4f8eb-1b07-41b5-b592-058c905d1b73',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/efe4f8eb-1b07-41b5-b592-058c905d1b73`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/efe4f8eb-1b07-41b5-b592-058c905d1b73?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/efe4f8eb-1b07-41b5-b592-058c905d1b73?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -1969,7 +1971,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
             },
           ],
         },
@@ -1980,7 +1982,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557`,
             },
           ],
         },
@@ -1992,11 +1994,11 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/5cb19a11-6171-4bc6-b00b-8db5c6385539',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/5cb19a11-6171-4bc6-b00b-8db5c6385539`,
           },
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/5cb19a11-6171-4bc6-b00b-8db5c6385539?v=full',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/5cb19a11-6171-4bc6-b00b-8db5c6385539?v=full`,
           },
         ],
         resourceVersion: '1.8',
@@ -2010,7 +2012,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/user/285f67ce-3d8b-4733-96e5-1e2235e8e804',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/user/285f67ce-3d8b-4733-96e5-1e2235e8e804`,
           },
         ],
       },
@@ -2027,7 +2029,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
           },
         ],
       },
@@ -2037,7 +2039,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/visittype/7b0f5697-27e3-40c4-8bae-f4049abfb4ed',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/visittype/7b0f5697-27e3-40c4-8bae-f4049abfb4ed`,
           },
         ],
       },
@@ -2048,7 +2050,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
           },
         ],
       },
@@ -2061,7 +2063,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557`,
             },
           ],
         },
@@ -2071,11 +2073,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/visit/4d875d51-31b8-4d6e-a400-69ff10bb6db2',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/visit/4d875d51-31b8-4d6e-a400-69ff10bb6db2`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/visit/4d875d51-31b8-4d6e-a400-69ff10bb6db2?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/visit/4d875d51-31b8-4d6e-a400-69ff10bb6db2?v=full`,
         },
       ],
       resourceVersion: '1.9',
@@ -2089,7 +2091,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/provider/94b09d36-2308-46d3-99b5-6d7886ed5a53',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/provider/94b09d36-2308-46d3-99b5-6d7886ed5a53`,
             },
           ],
         },
@@ -2099,7 +2101,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounterrole/240b26f9-dd88-4172-823d-4a8bfeb7841f',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounterrole/240b26f9-dd88-4172-823d-4a8bfeb7841f`,
             },
           ],
         },
@@ -2107,7 +2109,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557/encounterprovider/5d03cf6c-5d3c-4637-9aee-4b4b53f11081?v=full',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557/encounterprovider/5d03cf6c-5d3c-4637-9aee-4b4b53f11081?v=full`,
           },
         ],
         resourceVersion: '1.9',
@@ -2116,7 +2118,7 @@ export const mockVisitNotesRequest = [
     links: [
       {
         rel: 'self',
-        uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557',
+        uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/34b9436f-0744-4c08-9879-81fb4ec1e557`,
       },
     ],
     resourceVersion: '1.9',
@@ -2131,7 +2133,7 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
         },
       ],
     },
@@ -2160,7 +2162,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/locationtag/37dd4458-dc9e-4ae6-a1f1-789c1162d37b',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/locationtag/37dd4458-dc9e-4ae6-a1f1-789c1162d37b`,
             },
           ],
         },
@@ -2170,7 +2172,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/locationtag/8d4626ca-7abd-42ad-be48-56767bbcf272',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/locationtag/8d4626ca-7abd-42ad-be48-56767bbcf272`,
             },
           ],
         },
@@ -2180,7 +2182,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/locationtag/b8bbf83e-645f-451f-8efe-a0db56f09676',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/locationtag/b8bbf83e-645f-451f-8efe-a0db56f09676`,
             },
           ],
         },
@@ -2190,7 +2192,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/locationtag/1c783dca-fd54-4ea8-a0fc-2875374e9cb6',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/locationtag/1c783dca-fd54-4ea8-a0fc-2875374e9cb6`,
             },
           ],
         },
@@ -2201,7 +2203,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/5035669f-00c0-4187-9ed6-f6b85128fb26',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/5035669f-00c0-4187-9ed6-f6b85128fb26`,
           },
         ],
       },
@@ -2220,11 +2222,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764?v=full`,
         },
       ],
       resourceVersion: '2.0',
@@ -2240,7 +2242,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79`,
           },
         ],
       },
@@ -2253,11 +2255,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/form/c75f120a-04ec-11e3-8780-2b40bef9a44b',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/form/c75f120a-04ec-11e3-8780-2b40bef9a44b`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/form/c75f120a-04ec-11e3-8780-2b40bef9a44b?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/form/c75f120a-04ec-11e3-8780-2b40bef9a44b?v=full`,
         },
       ],
       resourceVersion: '1.9',
@@ -2272,11 +2274,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79?v=full`,
         },
       ],
       resourceVersion: '1.8',
@@ -2291,7 +2293,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
             },
           ],
         },
@@ -2301,7 +2303,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
             },
           ],
         },
@@ -2319,7 +2321,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -2329,7 +2331,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -2341,7 +2343,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/9f87f016-018f-45e8-9733-999b3ea6a556',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/9f87f016-018f-45e8-9733-999b3ea6a556`,
                 },
               ],
             },
@@ -2354,7 +2356,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
                 },
               ],
             },
@@ -2365,7 +2367,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/4c71a500-7998-40f8-8326-0bd36119d41a',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/4c71a500-7998-40f8-8326-0bd36119d41a`,
                 },
               ],
             },
@@ -2383,11 +2385,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -2398,7 +2400,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -2408,7 +2410,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -2422,7 +2424,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2432,7 +2434,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134379BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134379BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2442,7 +2444,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134385BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134385BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2452,7 +2454,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134378BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134378BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2465,7 +2467,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16025FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16025FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -2477,7 +2479,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132795ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132795ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2487,7 +2489,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236985ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236985ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2497,7 +2499,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132796ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132796ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2507,7 +2509,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/216550ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/216550ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2518,11 +2520,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -2533,11 +2535,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/ba85af65-afaa-4de7-9add-918cb6e7e2fa',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/ba85af65-afaa-4de7-9add-918cb6e7e2fa`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/ba85af65-afaa-4de7-9add-918cb6e7e2fa?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/ba85af65-afaa-4de7-9add-918cb6e7e2fa?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -2551,7 +2553,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/1284AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/1284AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -2561,7 +2563,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -2573,7 +2575,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/9f87f016-018f-45e8-9733-999b3ea6a556',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/9f87f016-018f-45e8-9733-999b3ea6a556`,
                 },
               ],
             },
@@ -2586,7 +2588,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
                 },
               ],
             },
@@ -2597,7 +2599,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/4c71a500-7998-40f8-8326-0bd36119d41a',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/4c71a500-7998-40f8-8326-0bd36119d41a`,
                 },
               ],
             },
@@ -2615,11 +2617,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -2630,7 +2632,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -2640,7 +2642,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d4918b0-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d4918b0-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -2654,7 +2656,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/130754BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/130754BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2664,7 +2666,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/83994BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/83994BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2674,7 +2676,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2684,7 +2686,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134406BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134406BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2694,7 +2696,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/142032BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134406BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2704,7 +2706,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16604BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16604BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2714,7 +2716,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134405BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134405BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2724,7 +2726,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/142031BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/142031BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2737,7 +2739,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/4639FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/4639FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -2749,7 +2751,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/88127ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/88127ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2759,7 +2761,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/143612ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/143612ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2769,7 +2771,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/134582ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/134582ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2779,7 +2781,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/267991ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/267991ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2789,7 +2791,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/73619ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/73619ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2799,7 +2801,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/182724ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/182724ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2809,7 +2811,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/285654ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/285654ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2819,7 +2821,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/133986ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/133986ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2829,7 +2831,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/286848ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/286848ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2839,7 +2841,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/144370ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/144370ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2850,11 +2852,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -2865,11 +2867,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/8899c652-6c2a-4f04-b6c8-1a5c29ad686d',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/8899c652-6c2a-4f04-b6c8-1a5c29ad686d`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/8899c652-6c2a-4f04-b6c8-1a5c29ad686d?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/8899c652-6c2a-4f04-b6c8-1a5c29ad686d?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -2883,7 +2885,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159946AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159946AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -2893,7 +2895,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -2905,7 +2907,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/9f87f016-018f-45e8-9733-999b3ea6a556',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/9f87f016-018f-45e8-9733-999b3ea6a556`,
                 },
               ],
             },
@@ -2918,7 +2920,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
                 },
               ],
             },
@@ -2929,7 +2931,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/4c71a500-7998-40f8-8326-0bd36119d41a',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/4c71a500-7998-40f8-8326-0bd36119d41a`,
                 },
               ],
             },
@@ -2947,11 +2949,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -2962,7 +2964,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -2972,7 +2974,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -2986,7 +2988,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107494BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107494BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -2996,7 +2998,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/127621BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/127621BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3006,7 +3008,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134530BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134530BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3016,7 +3018,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3026,7 +3028,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134531BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134531BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3038,7 +3040,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16472FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16472FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -3050,7 +3052,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/137043ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/137043ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3060,7 +3062,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217084ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217084ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3070,7 +3072,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236982ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236982ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3081,11 +3083,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -3096,11 +3098,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/8fb423bf-6b18-4603-815b-4fe84d61ea1c',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/8fb423bf-6b18-4603-815b-4fe84d61ea1c`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/8fb423bf-6b18-4603-815b-4fe84d61ea1c?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/8fb423bf-6b18-4603-815b-4fe84d61ea1c?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -3113,7 +3115,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
             },
           ],
         },
@@ -3124,7 +3126,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/4c71a500-7998-40f8-8326-0bd36119d41a',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/4c71a500-7998-40f8-8326-0bd36119d41a`,
             },
           ],
         },
@@ -3136,11 +3138,11 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/9f87f016-018f-45e8-9733-999b3ea6a556',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/9f87f016-018f-45e8-9733-999b3ea6a556`,
           },
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/9f87f016-018f-45e8-9733-999b3ea6a556?v=full',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/9f87f016-018f-45e8-9733-999b3ea6a556?v=full`,
           },
         ],
         resourceVersion: '1.11',
@@ -3155,7 +3157,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/user/285f67ce-3d8b-4733-96e5-1e2235e8e804',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/user/285f67ce-3d8b-4733-96e5-1e2235e8e804`,
           },
         ],
       },
@@ -3172,7 +3174,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
           },
         ],
       },
@@ -3182,7 +3184,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/visittype/7b0f5697-27e3-40c4-8bae-f4049abfb4ed',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/visittype/7b0f5697-27e3-40c4-8bae-f4049abfb4ed`,
           },
         ],
       },
@@ -3193,7 +3195,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/f76c0c8e-2c3a-443c-b26d-96a9f3847764`,
           },
         ],
       },
@@ -3206,7 +3208,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/29c90b59-f960-47ce-8e35-b4669101a6b8',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/29c90b59-f960-47ce-8e35-b4669101a6b8`,
             },
           ],
         },
@@ -3216,7 +3218,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/9ba10a3a-8bc0-4602-9dfa-63b6444a91bf',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/9ba10a3a-8bc0-4602-9dfa-63b6444a91bf`,
             },
           ],
         },
@@ -3226,7 +3228,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/d711d69d-41a8-4bac-beb3-7662423d7b54',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/d711d69d-41a8-4bac-beb3-7662423d7b54`,
             },
           ],
         },
@@ -3236,7 +3238,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/1577e091-2a3f-4ed7-be0f-8dec5442aa3b',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/1577e091-2a3f-4ed7-be0f-8dec5442aa3b`,
             },
           ],
         },
@@ -3246,7 +3248,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/4c71a500-7998-40f8-8326-0bd36119d41a',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/4c71a500-7998-40f8-8326-0bd36119d41a`,
             },
           ],
         },
@@ -3256,7 +3258,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/7f6d28f3-c557-4a17-a8fc-bf77322a3692',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/7f6d28f3-c557-4a17-a8fc-bf77322a3692`,
             },
           ],
         },
@@ -3266,11 +3268,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/visit/aeb98f1e-18ab-4877-9e81-98e40c87a1d8',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/visit/aeb98f1e-18ab-4877-9e81-98e40c87a1d8`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/visit/aeb98f1e-18ab-4877-9e81-98e40c87a1d8?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/visit/aeb98f1e-18ab-4877-9e81-98e40c87a1d8?v=full`,
         },
       ],
       resourceVersion: '1.9',
@@ -3284,7 +3286,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/provider/94b09d36-2308-46d3-99b5-6d7886ed5a53',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/provider/94b09d36-2308-46d3-99b5-6d7886ed5a53`,
             },
           ],
         },
@@ -3294,7 +3296,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounterrole/240b26f9-dd88-4172-823d-4a8bfeb7841f',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounterrole/240b26f9-dd88-4172-823d-4a8bfeb7841f`,
             },
           ],
         },
@@ -3302,7 +3304,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/4c71a500-7998-40f8-8326-0bd36119d41a/encounterprovider/b06c75db-edca-4475-bf51-00ec7ec22b4c?v=full',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/4c71a500-7998-40f8-8326-0bd36119d41a/encounterprovider/b06c75db-edca-4475-bf51-00ec7ec22b4c?v=full`,
           },
         ],
         resourceVersion: '1.9',
@@ -3311,7 +3313,7 @@ export const mockVisitNotesRequest = [
     links: [
       {
         rel: 'self',
-        uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/4c71a500-7998-40f8-8326-0bd36119d41a',
+        uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/4c71a500-7998-40f8-8326-0bd36119d41a`,
       },
     ],
     resourceVersion: '1.9',
@@ -3326,7 +3328,7 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
         },
       ],
     },
@@ -3355,7 +3357,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/locationtag/8d4626ca-7abd-42ad-be48-56767bbcf272',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/locationtag/8d4626ca-7abd-42ad-be48-56767bbcf272`,
             },
           ],
         },
@@ -3365,7 +3367,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/locationtag/b8bbf83e-645f-451f-8efe-a0db56f09676',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/locationtag/b8bbf83e-645f-451f-8efe-a0db56f09676`,
             },
           ],
         },
@@ -3375,7 +3377,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/locationtag/1c783dca-fd54-4ea8-a0fc-2875374e9cb6',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/locationtag/1c783dca-fd54-4ea8-a0fc-2875374e9cb6`,
             },
           ],
         },
@@ -3386,7 +3388,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/aff27d58-a15c-49a6-9beb-d30dcfc0c66e',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/aff27d58-a15c-49a6-9beb-d30dcfc0c66e`,
           },
         ],
       },
@@ -3405,11 +3407,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/b1a8b05e-3542-4037-bbd3-998ee9c40574',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/b1a8b05e-3542-4037-bbd3-998ee9c40574`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/b1a8b05e-3542-4037-bbd3-998ee9c40574?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/b1a8b05e-3542-4037-bbd3-998ee9c40574?v=full`,
         },
       ],
       resourceVersion: '2.0',
@@ -3425,7 +3427,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79`,
           },
         ],
       },
@@ -3438,11 +3440,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/form/c75f120a-04ec-11e3-8780-2b40bef9a44b',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/form/c75f120a-04ec-11e3-8780-2b40bef9a44b`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/form/c75f120a-04ec-11e3-8780-2b40bef9a44b?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/form/c75f120a-04ec-11e3-8780-2b40bef9a44b?v=full`,
         },
       ],
       resourceVersion: '1.9',
@@ -3457,11 +3459,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79?v=full`,
         },
       ],
       resourceVersion: '1.8',
@@ -3476,7 +3478,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
             },
           ],
         },
@@ -3486,7 +3488,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
             },
           ],
         },
@@ -3504,7 +3506,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -3514,7 +3516,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -3526,7 +3528,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f1754028-1e8e-4fd1-82af-a110f2d0c9f7',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f1754028-1e8e-4fd1-82af-a110f2d0c9f7`,
                 },
               ],
             },
@@ -3539,7 +3541,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/b1a8b05e-3542-4037-bbd3-998ee9c40574',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/b1a8b05e-3542-4037-bbd3-998ee9c40574`,
                 },
               ],
             },
@@ -3550,7 +3552,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/e4cd1b3e-c8dc-45fa-9efe-348a549106f1',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/e4cd1b3e-c8dc-45fa-9efe-348a549106f1`,
                 },
               ],
             },
@@ -3568,11 +3570,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -3583,7 +3585,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -3593,7 +3595,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -3607,7 +3609,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3617,7 +3619,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134379BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134379BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3627,7 +3629,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134385BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134385BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3637,7 +3639,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134378BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134378BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3650,7 +3652,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16025FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16025FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -3662,7 +3664,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132795ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132795ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3672,7 +3674,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236985ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236985ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3682,7 +3684,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132796ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132796ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3692,7 +3694,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/216550ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/216550ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3703,11 +3705,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -3718,11 +3720,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/ab03d844-c7a8-4caa-84eb-c938aaf48eca',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/ab03d844-c7a8-4caa-84eb-c938aaf48eca`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/ab03d844-c7a8-4caa-84eb-c938aaf48eca?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/ab03d844-c7a8-4caa-84eb-c938aaf48eca?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -3736,7 +3738,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/1284AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/1284AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -3746,7 +3748,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -3758,7 +3760,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f1754028-1e8e-4fd1-82af-a110f2d0c9f7',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f1754028-1e8e-4fd1-82af-a110f2d0c9f7`,
                 },
               ],
             },
@@ -3771,7 +3773,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/b1a8b05e-3542-4037-bbd3-998ee9c40574',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/b1a8b05e-3542-4037-bbd3-998ee9c40574`,
                 },
               ],
             },
@@ -3782,7 +3784,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/e4cd1b3e-c8dc-45fa-9efe-348a549106f1',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/e4cd1b3e-c8dc-45fa-9efe-348a549106f1`,
                 },
               ],
             },
@@ -3800,11 +3802,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/17990BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/17990BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/17990BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/17990BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -3815,7 +3817,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -3825,7 +3827,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d4918b0-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d4918b0-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -3839,7 +3841,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/108095BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/108095BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3849,7 +3851,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/83122BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/83122BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3859,7 +3861,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/17990BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/17990BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3869,7 +3871,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/137095BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/137095BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3882,7 +3884,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/275335ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/275335ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3892,7 +3894,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/276099ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/276099ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3902,7 +3904,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/72702ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/72702ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3912,7 +3914,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/276544ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/276544ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3922,7 +3924,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/275758ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/275758ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -3933,11 +3935,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/117617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -3948,11 +3950,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/4122120d-5168-45b6-8589-9257c766e4bb',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/4122120d-5168-45b6-8589-9257c766e4bb`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/4122120d-5168-45b6-8589-9257c766e4bb?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/4122120d-5168-45b6-8589-9257c766e4bb?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -3966,7 +3968,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159946AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159946AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -3976,7 +3978,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -3988,7 +3990,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f1754028-1e8e-4fd1-82af-a110f2d0c9f7',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f1754028-1e8e-4fd1-82af-a110f2d0c9f7`,
                 },
               ],
             },
@@ -4001,7 +4003,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/b1a8b05e-3542-4037-bbd3-998ee9c40574',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/b1a8b05e-3542-4037-bbd3-998ee9c40574`,
                 },
               ],
             },
@@ -4012,7 +4014,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/e4cd1b3e-c8dc-45fa-9efe-348a549106f1',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/e4cd1b3e-c8dc-45fa-9efe-348a549106f1`,
                 },
               ],
             },
@@ -4030,11 +4032,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -4045,7 +4047,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -4055,7 +4057,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -4069,7 +4071,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107494BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107494BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4079,7 +4081,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/127621BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/127621BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4089,7 +4091,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134530BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134530BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4099,7 +4101,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4109,7 +4111,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134531BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134531BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4121,7 +4123,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16472FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16472FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -4133,7 +4135,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/137043ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/137043ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4143,7 +4145,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217084ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217084ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4153,7 +4155,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236982ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236982ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4164,11 +4166,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -4179,11 +4181,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/56808a18-c6e7-4bbd-b382-e5f1ec2064de',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/56808a18-c6e7-4bbd-b382-e5f1ec2064de`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/56808a18-c6e7-4bbd-b382-e5f1ec2064de?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/56808a18-c6e7-4bbd-b382-e5f1ec2064de?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -4196,7 +4198,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/b1a8b05e-3542-4037-bbd3-998ee9c40574',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/b1a8b05e-3542-4037-bbd3-998ee9c40574`,
             },
           ],
         },
@@ -4207,7 +4209,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/e4cd1b3e-c8dc-45fa-9efe-348a549106f1',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/e4cd1b3e-c8dc-45fa-9efe-348a549106f1`,
             },
           ],
         },
@@ -4219,11 +4221,11 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f1754028-1e8e-4fd1-82af-a110f2d0c9f7',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f1754028-1e8e-4fd1-82af-a110f2d0c9f7`,
           },
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f1754028-1e8e-4fd1-82af-a110f2d0c9f7?v=full',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f1754028-1e8e-4fd1-82af-a110f2d0c9f7?v=full`,
           },
         ],
         resourceVersion: '1.11',
@@ -4238,7 +4240,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/user/285f67ce-3d8b-4733-96e5-1e2235e8e804',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/user/285f67ce-3d8b-4733-96e5-1e2235e8e804`,
           },
         ],
       },
@@ -4256,7 +4258,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/provider/94b09d36-2308-46d3-99b5-6d7886ed5a53',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/provider/94b09d36-2308-46d3-99b5-6d7886ed5a53`,
             },
           ],
         },
@@ -4266,7 +4268,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounterrole/240b26f9-dd88-4172-823d-4a8bfeb7841f',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounterrole/240b26f9-dd88-4172-823d-4a8bfeb7841f`,
             },
           ],
         },
@@ -4274,7 +4276,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/e4cd1b3e-c8dc-45fa-9efe-348a549106f1/encounterprovider/88cd0ac6-b670-493b-90ba-deaf5c4ded61?v=full',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/e4cd1b3e-c8dc-45fa-9efe-348a549106f1/encounterprovider/88cd0ac6-b670-493b-90ba-deaf5c4ded61?v=full`,
           },
         ],
         resourceVersion: '1.9',
@@ -4283,7 +4285,7 @@ export const mockVisitNotesRequest = [
     links: [
       {
         rel: 'self',
-        uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/e4cd1b3e-c8dc-45fa-9efe-348a549106f1',
+        uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/e4cd1b3e-c8dc-45fa-9efe-348a549106f1`,
       },
     ],
     resourceVersion: '1.9',
@@ -4298,7 +4300,7 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
         },
       ],
     },
@@ -4314,7 +4316,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79`,
           },
         ],
       },
@@ -4327,11 +4329,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/form/c75f120a-04ec-11e3-8780-2b40bef9a44b',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/form/c75f120a-04ec-11e3-8780-2b40bef9a44b`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/form/c75f120a-04ec-11e3-8780-2b40bef9a44b?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/form/c75f120a-04ec-11e3-8780-2b40bef9a44b?v=full`,
         },
       ],
       resourceVersion: '1.9',
@@ -4346,11 +4348,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79?v=full`,
         },
       ],
       resourceVersion: '1.8',
@@ -4365,7 +4367,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
             },
           ],
         },
@@ -4375,7 +4377,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
             },
           ],
         },
@@ -4393,7 +4395,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -4403,7 +4405,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -4415,7 +4417,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/d85f9060-fe42-4016-b5d1-1416439ec865',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/d85f9060-fe42-4016-b5d1-1416439ec865`,
                 },
               ],
             },
@@ -4430,7 +4432,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/45ac2dc0-f285-45a3-a5cb-f365b0dceb15',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/45ac2dc0-f285-45a3-a5cb-f365b0dceb15`,
                 },
               ],
             },
@@ -4448,11 +4450,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -4463,7 +4465,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -4473,7 +4475,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -4487,7 +4489,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4497,7 +4499,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134379BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134379BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4507,7 +4509,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134385BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134385BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4517,7 +4519,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134378BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134378BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4530,7 +4532,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16025FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16025FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -4542,7 +4544,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132795ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132795ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4552,7 +4554,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236985ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236985ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4562,7 +4564,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132796ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132796ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4572,7 +4574,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/216550ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/216550ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4583,11 +4585,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -4598,11 +4600,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/a02d2870-9db6-496f-a2e2-530c711acd25',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/a02d2870-9db6-496f-a2e2-530c711acd25`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/a02d2870-9db6-496f-a2e2-530c711acd25?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/a02d2870-9db6-496f-a2e2-530c711acd25?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -4616,7 +4618,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159946AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159946AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -4626,7 +4628,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -4638,7 +4640,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/d85f9060-fe42-4016-b5d1-1416439ec865',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/d85f9060-fe42-4016-b5d1-1416439ec865`,
                 },
               ],
             },
@@ -4653,7 +4655,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/45ac2dc0-f285-45a3-a5cb-f365b0dceb15',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/45ac2dc0-f285-45a3-a5cb-f365b0dceb15`,
                 },
               ],
             },
@@ -4671,11 +4673,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -4686,7 +4688,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -4696,7 +4698,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -4710,7 +4712,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107494BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107494BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4720,7 +4722,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/127621BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/127621BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4730,7 +4732,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134530BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134530BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4740,7 +4742,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4750,7 +4752,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134531BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134531BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4762,7 +4764,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16472FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16472FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -4774,7 +4776,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/137043ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/137043ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4784,7 +4786,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217084ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217084ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4794,7 +4796,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236982ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236982ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4805,11 +4807,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -4820,11 +4822,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/aa683081-37c0-4139-afab-f7e0391aa7a1',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/aa683081-37c0-4139-afab-f7e0391aa7a1`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/aa683081-37c0-4139-afab-f7e0391aa7a1?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/aa683081-37c0-4139-afab-f7e0391aa7a1?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -4838,7 +4840,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/1284AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/1284AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -4848,7 +4850,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -4860,7 +4862,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/d85f9060-fe42-4016-b5d1-1416439ec865',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/d85f9060-fe42-4016-b5d1-1416439ec865`,
                 },
               ],
             },
@@ -4875,7 +4877,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/45ac2dc0-f285-45a3-a5cb-f365b0dceb15',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/45ac2dc0-f285-45a3-a5cb-f365b0dceb15`,
                 },
               ],
             },
@@ -4893,11 +4895,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -4908,7 +4910,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -4918,7 +4920,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d4918b0-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d4918b0-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -4932,7 +4934,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/130754BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/130754BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4942,7 +4944,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/83994BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/83994BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4952,7 +4954,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16603BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4962,7 +4964,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134406BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134406BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4972,7 +4974,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/142032BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134406BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4982,7 +4984,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16604BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/16604BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -4992,7 +4994,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134405BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134405BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5002,7 +5004,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/142031BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/142031BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5015,7 +5017,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/4639FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/4639FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -5027,7 +5029,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/88127ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/88127ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5037,7 +5039,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/143612ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/143612ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5047,7 +5049,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/134582ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/134582ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5057,7 +5059,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/267991ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/267991ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5067,7 +5069,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/73619ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/73619ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5077,7 +5079,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/182724ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/182724ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5087,7 +5089,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/285654ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/285654ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5097,7 +5099,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/133986ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/133986ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5107,7 +5109,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/286848ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/286848ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5117,7 +5119,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/144370ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/144370ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5128,11 +5130,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -5143,11 +5145,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/5aefe9a5-7025-4ce7-ac05-7ea2fc3f13c3',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/5aefe9a5-7025-4ce7-ac05-7ea2fc3f13c3`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/5aefe9a5-7025-4ce7-ac05-7ea2fc3f13c3?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/5aefe9a5-7025-4ce7-ac05-7ea2fc3f13c3?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -5162,7 +5164,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/45ac2dc0-f285-45a3-a5cb-f365b0dceb15',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/45ac2dc0-f285-45a3-a5cb-f365b0dceb15`,
             },
           ],
         },
@@ -5174,11 +5176,11 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/d85f9060-fe42-4016-b5d1-1416439ec865',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/d85f9060-fe42-4016-b5d1-1416439ec865`,
           },
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/d85f9060-fe42-4016-b5d1-1416439ec865?v=full',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/d85f9060-fe42-4016-b5d1-1416439ec865?v=full`,
           },
         ],
         resourceVersion: '1.11',
@@ -5193,7 +5195,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/user/93ee734f-618a-4951-939d-872f6c4a7447',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/user/93ee734f-618a-4951-939d-872f6c4a7447`,
           },
         ],
       },
@@ -5211,7 +5213,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/provider/76e55303-21bc-445e-89dd-212998773247',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/provider/76e55303-21bc-445e-89dd-212998773247`,
             },
           ],
         },
@@ -5221,7 +5223,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounterrole/240b26f9-dd88-4172-823d-4a8bfeb7841f',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounterrole/240b26f9-dd88-4172-823d-4a8bfeb7841f`,
             },
           ],
         },
@@ -5229,7 +5231,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/45ac2dc0-f285-45a3-a5cb-f365b0dceb15/encounterprovider/b8e81322-e3e2-444a-942c-c79e6a689eb9?v=full',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/45ac2dc0-f285-45a3-a5cb-f365b0dceb15/encounterprovider/b8e81322-e3e2-444a-942c-c79e6a689eb9?v=full`,
           },
         ],
         resourceVersion: '1.9',
@@ -5238,7 +5240,7 @@ export const mockVisitNotesRequest = [
     links: [
       {
         rel: 'self',
-        uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/45ac2dc0-f285-45a3-a5cb-f365b0dceb15',
+        uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/45ac2dc0-f285-45a3-a5cb-f365b0dceb15`,
       },
     ],
     resourceVersion: '1.9',
@@ -5253,7 +5255,7 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
         },
       ],
     },
@@ -5282,7 +5284,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/c9e8613f-1cc1-4769-81d7-318fe853c150',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/c9e8613f-1cc1-4769-81d7-318fe853c150`,
           },
         ],
       },
@@ -5301,11 +5303,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/1675978f-4ee2-4b4a-a849-99029f9698fc',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/1675978f-4ee2-4b4a-a849-99029f9698fc`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/1675978f-4ee2-4b4a-a849-99029f9698fc?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/1675978f-4ee2-4b4a-a849-99029f9698fc?v=full`,
         },
       ],
       resourceVersion: '2.0',
@@ -5321,7 +5323,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79`,
           },
         ],
       },
@@ -5334,11 +5336,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/form/c75f120a-04ec-11e3-8780-2b40bef9a44b',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/form/c75f120a-04ec-11e3-8780-2b40bef9a44b`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/form/c75f120a-04ec-11e3-8780-2b40bef9a44b?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/form/c75f120a-04ec-11e3-8780-2b40bef9a44b?v=full`,
         },
       ],
       resourceVersion: '1.9',
@@ -5353,11 +5355,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encountertype/d7151f82-c1f3-4152-a605-2f9ea7414a79?v=full`,
         },
       ],
       resourceVersion: '1.8',
@@ -5372,7 +5374,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
             },
           ],
         },
@@ -5382,7 +5384,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
             },
           ],
         },
@@ -5400,7 +5402,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159946AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159946AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -5410,7 +5412,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -5422,7 +5424,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/ec5bd62a-38c6-4d03-b51c-4554468f3169',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/ec5bd62a-38c6-4d03-b51c-4554468f3169`,
                 },
               ],
             },
@@ -5435,7 +5437,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/1675978f-4ee2-4b4a-a849-99029f9698fc',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/1675978f-4ee2-4b4a-a849-99029f9698fc`,
                 },
               ],
             },
@@ -5446,7 +5448,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0`,
                 },
               ],
             },
@@ -5464,11 +5466,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -5479,7 +5481,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -5489,7 +5491,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -5503,7 +5505,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107494BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107494BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5513,7 +5515,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/127621BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/127621BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5523,7 +5525,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134530BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134530BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5533,7 +5535,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107493BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5543,7 +5545,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134531BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134531BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5555,7 +5557,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16472FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16472FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -5567,7 +5569,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/137043ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/137043ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5577,7 +5579,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217084ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217084ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5587,7 +5589,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236982ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236982ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5598,11 +5600,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159943AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -5613,11 +5615,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/3d12c806-bb89-4c16-a54e-77a29493ebc5',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/3d12c806-bb89-4c16-a54e-77a29493ebc5`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/3d12c806-bb89-4c16-a54e-77a29493ebc5?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/3d12c806-bb89-4c16-a54e-77a29493ebc5?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -5631,7 +5633,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -5641,7 +5643,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -5653,7 +5655,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/ec5bd62a-38c6-4d03-b51c-4554468f3169',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/ec5bd62a-38c6-4d03-b51c-4554468f3169`,
                 },
               ],
             },
@@ -5666,7 +5668,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/1675978f-4ee2-4b4a-a849-99029f9698fc',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/1675978f-4ee2-4b4a-a849-99029f9698fc`,
                 },
               ],
             },
@@ -5677,7 +5679,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0`,
                 },
               ],
             },
@@ -5695,11 +5697,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -5710,7 +5712,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -5720,7 +5722,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -5734,7 +5736,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5744,7 +5746,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134379BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134379BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5754,7 +5756,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134385BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134385BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5764,7 +5766,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134378BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134378BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5777,7 +5779,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16025FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16025FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -5789,7 +5791,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132795ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132795ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5799,7 +5801,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236985ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236985ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5809,7 +5811,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132796ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132796ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5819,7 +5821,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/216550ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/216550ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5830,11 +5832,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -5845,11 +5847,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/604b4f8e-f13b-4b90-b78d-79b75cf9c29a',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/604b4f8e-f13b-4b90-b78d-79b75cf9c29a`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/604b4f8e-f13b-4b90-b78d-79b75cf9c29a?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/604b4f8e-f13b-4b90-b78d-79b75cf9c29a?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -5863,7 +5865,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/1284AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/1284AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -5873,7 +5875,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -5885,7 +5887,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/ec5bd62a-38c6-4d03-b51c-4554468f3169',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/ec5bd62a-38c6-4d03-b51c-4554468f3169`,
                 },
               ],
             },
@@ -5895,7 +5897,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107966BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107966BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                 },
               ],
             },
@@ -5907,7 +5909,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/1675978f-4ee2-4b4a-a849-99029f9698fc',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/1675978f-4ee2-4b4a-a849-99029f9698fc`,
                 },
               ],
             },
@@ -5918,7 +5920,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0`,
                 },
               ],
             },
@@ -5936,11 +5938,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107966BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107966BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107966BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107966BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -5951,7 +5953,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -5961,7 +5963,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d4918b0-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d4918b0-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -5975,7 +5977,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/126352BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/126352BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5985,7 +5987,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107966BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107966BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -5998,7 +6000,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/242519ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/242519ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6008,7 +6010,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/285752ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/285752ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6018,7 +6020,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217284ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217284ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6028,7 +6030,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/143841ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/143841ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6038,7 +6040,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/170552ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/170552ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6048,7 +6050,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/143842ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/143842ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6058,7 +6060,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/170553ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/170553ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6069,11 +6071,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/160148AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -6084,11 +6086,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/db7e1d38-a22a-486f-b7d9-31ef9c87f58e',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/db7e1d38-a22a-486f-b7d9-31ef9c87f58e`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/db7e1d38-a22a-486f-b7d9-31ef9c87f58e?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/db7e1d38-a22a-486f-b7d9-31ef9c87f58e?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -6101,7 +6103,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/1675978f-4ee2-4b4a-a849-99029f9698fc',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/1675978f-4ee2-4b4a-a849-99029f9698fc`,
             },
           ],
         },
@@ -6112,7 +6114,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0`,
             },
           ],
         },
@@ -6124,11 +6126,11 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/ec5bd62a-38c6-4d03-b51c-4554468f3169',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/ec5bd62a-38c6-4d03-b51c-4554468f3169`,
           },
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/ec5bd62a-38c6-4d03-b51c-4554468f3169?v=full',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/ec5bd62a-38c6-4d03-b51c-4554468f3169?v=full`,
           },
         ],
         resourceVersion: '1.11',
@@ -6142,7 +6144,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/162169AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/162169AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
             },
           ],
         },
@@ -6152,7 +6154,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
             },
           ],
         },
@@ -6168,7 +6170,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/1675978f-4ee2-4b4a-a849-99029f9698fc',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/1675978f-4ee2-4b4a-a849-99029f9698fc`,
             },
           ],
         },
@@ -6179,7 +6181,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0`,
             },
           ],
         },
@@ -6191,11 +6193,11 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/70fb26b6-78bf-4bb7-bea1-9d371a918759',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/70fb26b6-78bf-4bb7-bea1-9d371a918759`,
           },
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/70fb26b6-78bf-4bb7-bea1-9d371a918759?v=full',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/70fb26b6-78bf-4bb7-bea1-9d371a918759?v=full`,
           },
         ],
         resourceVersion: '1.11',
@@ -6209,7 +6211,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
             },
           ],
         },
@@ -6219,7 +6221,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
             },
           ],
         },
@@ -6237,7 +6239,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159946AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159946AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -6247,7 +6249,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -6259,7 +6261,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f1381ba6-f876-4ca8-96c8-309127372b95',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f1381ba6-f876-4ca8-96c8-309127372b95`,
                 },
               ],
             },
@@ -6272,7 +6274,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/1675978f-4ee2-4b4a-a849-99029f9698fc',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/1675978f-4ee2-4b4a-a849-99029f9698fc`,
                 },
               ],
             },
@@ -6283,7 +6285,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0`,
                 },
               ],
             },
@@ -6301,11 +6303,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107495BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107495BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107495BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107495BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -6316,7 +6318,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -6326,7 +6328,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -6340,7 +6342,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134532BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134532BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6350,7 +6352,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107495BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107495BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6360,7 +6362,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134533BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134533BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6372,7 +6374,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16473FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16473FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -6384,7 +6386,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236983ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236983ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6394,7 +6396,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/137044ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/137044ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6404,7 +6406,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217085ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/217085ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6415,11 +6417,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159944AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -6430,11 +6432,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/c4e3a836-d188-4145-a1bc-67a4fe46cf5c',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/c4e3a836-d188-4145-a1bc-67a4fe46cf5c`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/c4e3a836-d188-4145-a1bc-67a4fe46cf5c?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/c4e3a836-d188-4145-a1bc-67a4fe46cf5c?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -6448,7 +6450,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/1284AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/1284AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -6458,7 +6460,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -6470,7 +6472,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f1381ba6-f876-4ca8-96c8-309127372b95',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f1381ba6-f876-4ca8-96c8-309127372b95`,
                 },
               ],
             },
@@ -6480,7 +6482,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/38217BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/38217BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                 },
               ],
             },
@@ -6492,7 +6494,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/1675978f-4ee2-4b4a-a849-99029f9698fc',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/1675978f-4ee2-4b4a-a849-99029f9698fc`,
                 },
               ],
             },
@@ -6503,7 +6505,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0`,
                 },
               ],
             },
@@ -6521,11 +6523,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/38217BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/38217BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/38217BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/38217BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -6536,7 +6538,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a48b6-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a48b6-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -6546,7 +6548,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d4918b0-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d4918b0-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -6560,7 +6562,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/38217BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/38217BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6570,7 +6572,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/66834BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/66834BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6580,7 +6582,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/38218BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/38218BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6590,7 +6592,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/118226BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/118226BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6600,7 +6602,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/136492BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/136492BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6610,7 +6612,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107471BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/107471BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6623,7 +6625,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/253347ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/253347ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6633,7 +6635,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/199220ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/199220ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6643,7 +6645,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/107352ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/107352ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6653,7 +6655,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/153776ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/153776ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6663,7 +6665,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/253346ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/253346ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6673,7 +6675,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/a17c11ae-0411-37d7-bb8c-8312a9f838a8',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/a17c11ae-0411-37d7-bb8c-8312a9f838a8`,
                     },
                   ],
                 },
@@ -6683,7 +6685,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/56284ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/56284ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6693,7 +6695,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/165536ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/165536ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6705,7 +6707,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                     },
                   ],
                 },
@@ -6715,7 +6717,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                     },
                   ],
                 },
@@ -6725,7 +6727,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                     },
                   ],
                 },
@@ -6735,11 +6737,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/138405AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -6750,11 +6752,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/692f513a-c744-4ced-bca1-d01e4186b7f5',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/692f513a-c744-4ced-bca1-d01e4186b7f5`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/692f513a-c744-4ced-bca1-d01e4186b7f5?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/692f513a-c744-4ced-bca1-d01e4186b7f5?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -6768,7 +6770,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159394AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
               ],
             },
@@ -6778,7 +6780,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
                 },
               ],
             },
@@ -6790,7 +6792,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f1381ba6-f876-4ca8-96c8-309127372b95',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f1381ba6-f876-4ca8-96c8-309127372b95`,
                 },
               ],
             },
@@ -6803,7 +6805,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/1675978f-4ee2-4b4a-a849-99029f9698fc',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/1675978f-4ee2-4b4a-a849-99029f9698fc`,
                 },
               ],
             },
@@ -6814,7 +6816,7 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0`,
                 },
               ],
             },
@@ -6832,11 +6834,11 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                   },
                   {
                     rel: 'full',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB?v=full`,
                   },
                 ],
                 resourceVersion: '1.9',
@@ -6847,7 +6849,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -6857,7 +6859,7 @@ export const mockVisitNotesRequest = [
                 links: [
                   {
                     rel: 'self',
-                    uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f',
+                    uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/conceptclass/8d492774-c2cc-11de-8d13-0010c6dffd0f`,
                   },
                 ],
               },
@@ -6871,7 +6873,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/106475BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6881,7 +6883,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134379BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134379BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6891,7 +6893,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134385BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134385BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6901,7 +6903,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134378BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/name/134378BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6914,7 +6916,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16025FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/description/16025FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF`,
                     },
                   ],
                 },
@@ -6926,7 +6928,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132795ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132795ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6936,7 +6938,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236985ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/236985ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6946,7 +6948,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132796ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/132796ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6956,7 +6958,7 @@ export const mockVisitNotesRequest = [
                   links: [
                     {
                       rel: 'self',
-                      uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/216550ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+                      uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/mapping/216550ABBBBBBBBBBBBBBBBBBBBBBBBBBBBB`,
                     },
                   ],
                 },
@@ -6967,11 +6969,11 @@ export const mockVisitNotesRequest = [
               links: [
                 {
                   rel: 'self',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`,
                 },
                 {
                   rel: 'full',
-                  uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full',
+                  uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/concept/159393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA?v=full`,
                 },
               ],
               resourceVersion: '2.0',
@@ -6982,11 +6984,11 @@ export const mockVisitNotesRequest = [
             links: [
               {
                 rel: 'self',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/4bc57d87-8271-477d-93f7-f6f2493b9e7b',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/4bc57d87-8271-477d-93f7-f6f2493b9e7b`,
               },
               {
                 rel: 'full',
-                uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/4bc57d87-8271-477d-93f7-f6f2493b9e7b?v=full',
+                uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/4bc57d87-8271-477d-93f7-f6f2493b9e7b?v=full`,
               },
             ],
             resourceVersion: '1.11',
@@ -6999,7 +7001,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/1675978f-4ee2-4b4a-a849-99029f9698fc',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/1675978f-4ee2-4b4a-a849-99029f9698fc`,
             },
           ],
         },
@@ -7010,7 +7012,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0`,
             },
           ],
         },
@@ -7022,11 +7024,11 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f1381ba6-f876-4ca8-96c8-309127372b95',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f1381ba6-f876-4ca8-96c8-309127372b95`,
           },
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/latestobs/f1381ba6-f876-4ca8-96c8-309127372b95?v=full',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/latestobs/f1381ba6-f876-4ca8-96c8-309127372b95?v=full`,
           },
         ],
         resourceVersion: '1.11',
@@ -7041,7 +7043,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/user/45ce6c2e-dd5a-11e6-9d9c-0242ac150002',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/user/45ce6c2e-dd5a-11e6-9d9c-0242ac150002`,
           },
         ],
       },
@@ -7058,7 +7060,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/patient/8673ee4f-e2ab-4077-ba55-4980f408773e',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/patient/8673ee4f-e2ab-4077-ba55-4980f408773e`,
           },
         ],
       },
@@ -7068,7 +7070,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/visittype/a22733fa-3501-4020-a520-da024eeff088',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/visittype/a22733fa-3501-4020-a520-da024eeff088`,
           },
         ],
       },
@@ -7079,7 +7081,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'self',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/location/7fdfa2cb-bc95-405a-88c6-32b7673c0453',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/location/7fdfa2cb-bc95-405a-88c6-32b7673c0453`,
           },
         ],
       },
@@ -7092,7 +7094,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/d3bd542d-be6e-4d8b-939e-24d25b5490c2',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/d3bd542d-be6e-4d8b-939e-24d25b5490c2`,
             },
           ],
         },
@@ -7102,7 +7104,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0`,
             },
           ],
         },
@@ -7112,11 +7114,11 @@ export const mockVisitNotesRequest = [
       links: [
         {
           rel: 'self',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/visit/f540da3a-b1e9-493e-9f24-12affd7e4f0d',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/visit/f540da3a-b1e9-493e-9f24-12affd7e4f0d`,
         },
         {
           rel: 'full',
-          uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/visit/f540da3a-b1e9-493e-9f24-12affd7e4f0d?v=full',
+          uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/visit/f540da3a-b1e9-493e-9f24-12affd7e4f0d?v=full`,
         },
       ],
       resourceVersion: '1.9',
@@ -7130,7 +7132,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/provider/f9badd80-ab76-11e2-9e96-0800200c9a66',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/provider/f9badd80-ab76-11e2-9e96-0800200c9a66`,
             },
           ],
         },
@@ -7140,7 +7142,7 @@ export const mockVisitNotesRequest = [
           links: [
             {
               rel: 'self',
-              uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounterrole/a0b03050-c99b-11e0-9572-0800200c9a66',
+              uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounterrole/a0b03050-c99b-11e0-9572-0800200c9a66`,
             },
           ],
         },
@@ -7148,7 +7150,7 @@ export const mockVisitNotesRequest = [
         links: [
           {
             rel: 'full',
-            uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0/encounterprovider/94a13298-5a0b-4a2a-b9aa-d1457cc4ad71?v=full',
+            uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0/encounterprovider/94a13298-5a0b-4a2a-b9aa-d1457cc4ad71?v=full`,
           },
         ],
         resourceVersion: '1.9',
@@ -7157,7 +7159,7 @@ export const mockVisitNotesRequest = [
     links: [
       {
         rel: 'self',
-        uri: 'http://localhost:8090/openmrslocalhost:8080/openmrs/ws/rest/v1/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0',
+        uri: `http://localhost:8090/openmrslocalhost:8080/openmrs/${restBaseUrl}/encounter/95f6471b-9a65-4dc3-b6ab-0d8bd3299ff0`,
       },
     ],
     resourceVersion: '1.9',

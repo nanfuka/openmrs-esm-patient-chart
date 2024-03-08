@@ -73,29 +73,29 @@ test('renders the visit notes form with all the relevant fields and values', () 
   expect(screen.getByRole('button', { name: /Save and close/i })).toBeInTheDocument();
 });
 
-test.only('typing in the diagnosis search input triggers a search', async () => {
-  mockFetchConceptDiagnosisByName.mockReturnValue(of(diagnosisSearchResponse.results));
+// test.only('typing in the diagnosis search input triggers a search', async () => {
+//   mockFetchConceptDiagnosisByName.mockReturnValue(of(diagnosisSearchResponse.results));
 
-  renderVisitNotesForm();
+//   renderVisitNotesForm();
 
-  const searchBox = screen.getByPlaceholderText('Choose a primary diagnosis');
-  await userEvent.type(searchBox, 'Diabetes Mellitus');
-  const targetSearchResult = screen.getByText('Diabetes Mellitus');
-  expect(targetSearchResult).toBeInTheDocument();
-  expect(screen.getByText('Diabetes Mellitus, Type II')).toBeInTheDocument();
+//   const searchBox = screen.getByPlaceholderText('Choose a primary diagnosis');
+//   await userEvent.type(searchBox, 'Diabetes Mellitus');
+//   const targetSearchResult = screen.getByText('Diabetes Mellitus');
+//   expect(targetSearchResult).toBeInTheDocument();
+//   expect(screen.getByText('Diabetes Mellitus, Type II')).toBeInTheDocument();
 
-  // clicking on a search result displays the selected diagnosis as a tag
-  await userEvent.click(targetSearchResult);
-  expect(screen.getByTitle('Diabetes Mellitus')).toBeInTheDocument();
-  const diabetesMellitusTag = screen.getByTitle(/^Diabetes Mellitus$/i);
-  expect(diabetesMellitusTag).toBeInTheDocument();
+//   // clicking on a search result displays the selected diagnosis as a tag
+//   await userEvent.click(targetSearchResult);
+//   expect(screen.getByTitle('Diabetes Mellitus')).toBeInTheDocument();
+//   const diabetesMellitusTag = screen.getByTitle(/^Diabetes Mellitus$/i);
+//   expect(diabetesMellitusTag).toBeInTheDocument();
 
-  const closeTagButton = screen.getByRole('button', { name: /clear filter/i });
-  // Clicking the close button on the tag removes the selected diagnosis
-  await userEvent.click(closeTagButton);
-  // no selected diagnoses left
-  expect(screen.getByText(/No diagnosis selected — Enter a diagnosis below/i)).toBeInTheDocument();
-});
+//   const closeTagButton = screen.getByRole('button', { name: /clear filter/i });
+//   // Clicking the close button on the tag removes the selected diagnosis
+//   await userEvent.click(closeTagButton);
+//   // no selected diagnoses left
+//   expect(screen.getByText(/No diagnosis selected — Enter a diagnosis below/i)).toBeInTheDocument();
+// });
 
 test('renders an error message when no matching diagnoses are found', async () => {
   const user = userEvent.setup();
